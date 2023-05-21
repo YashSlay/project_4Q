@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="https://www.seekpng.com/png/full/114-1143478_heart-png-white-picture-download-white-heart-outline.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Conversion Calculator</title>
+	<style>
+		td, th {
+			text-align: center;
+		}
+		.prl {
+			background-color: #737CA1;
+  			border: none;
+  			color: white;
+  			padding: 10px 20px;
+  			text-align: center;
+		}
+		body {
+			font-family: 'Lato', sans-serif;
+			color: white;
+			background-size: cover;
+		}
+		h1 {
+			text-align: center;
+			color: white;
+			font-family: Times New Roman;
+		}
+		.el {
+		border: dashed;
+		border-color: #737CA1;
+		border-width: 10px;
+  		background-color: #566D7E;
+  		padding: 20px;
+  		}
+	</style>
+</head>
+<body background="https://wallpapers.com/images/hd/aesthetic-laptop-drawing-kzs2xmyje63oewbt.jpg">
+	<br><br><br><br><br><br><h1><b><i><u>Length Converter ♡</u></i></b></h1>
+		<center><br><div class="el"><p><br>
+		♥~ Length Conversion Calculator ~♥<br>
+		Millimeters to Centimeters, Meters, and Kilometers<br><br>
+		<input type="text" id="value" placeholder="Input Value in Millimeters"><br>
+		<br>
+		<button type="button" class="btn btn-md prl" onclick="sec()">Centimeters</button>
+		<button type="button" class="btn btn-md prl" onclick="min()">Meters</button>
+		<button type="button" class="btn btn-md prl" onclick="day()">Kilometers</button>
+		<div>Value: <p id="id1"></p></div>
+	<script>
+		function sec() {
+		var n1 = document.getElementById('value').value;
+		var n2 = 0.1;
+		var n3 = " centimeters";
+		var add = Number(n1) * Number(n2) + n3;
+		document.getElementById('id1').innerHTML = add;
+		}
+
+		function min() {
+		var n1 = document.getElementById('value').value;
+		var n2 = 0.01;
+		var n4 = " meters";
+		var sub = Number(n1) * Number(n2) + n4;
+		document.getElementById('id1').innerHTML = sub;
+		}
+
+		function day() {
+		var n1 = document.getElementById('value').value;
+		var n2 = 0.001;
+		var n5 = " kilometers";
+		var mul = Number(n1) * Number(n2) + n5;
+		document.getElementById('id1').innerHTML = mul;
+		}
+	</script>
+	</p></div></center>
+ 
+</body>
+</html>
